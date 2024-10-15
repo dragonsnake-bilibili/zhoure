@@ -35,8 +35,8 @@ window.addEventListener("load", async () => {
     const bitmap = await window.createImageBitmap(file);
     processor_context.drawImage(bitmap, 320, 271, 462, 260);
     const downloader = document.createElement("a");
-    downloader.href = processor.toDataURL("image/png");
-    downloader.download = `${crypto.randomUUID()}.png`;
+    downloader.href = processor.toDataURL("image/jpeg");
+    downloader.download = `${crypto.randomUUID()}.jpeg`;
     downloader.click();
   }
   canvas.addEventListener("drop", async (event) => {
